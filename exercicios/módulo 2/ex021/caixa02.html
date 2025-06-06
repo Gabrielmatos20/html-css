@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping text</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkslategray;
+        }
+        header{
+            width: 400px;
+            height: 150px;
+            background-color: rgb(82, 137, 137);
+            border-radius: 6px;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+        }
+        nav{
+            background-color: rgb(78, 78, 78);
+            padding: 3px;
+            width: 250px;
+            margin: auto;
+            box-shadow: 1px 2px 11px rgba(46, 46, 46, 0.581);
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+            
+            
+
+        }
+        nav > a:hover{
+            color: rgb(182, 183, 185);
+            text-decoration: underline;
+            
+        }
+        main{
+            background-color: rgb(240, 248, 255);
+            text-align: justify;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.452);
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(167, 173, 178);
+        }
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 8px;
+            margin: 0px;
+            border-radius: 6px;
+        }
+        footer > p{
+            margin: 0px;
+        } 
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"> 
+                <p>Esporte Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cumque provident! Quaerat voluptate corporis eveniet itaque sit qui dolorem, consectetur voluptates animi voluptatum, dolore ducimus possimus. Eveniet laboriosam omnis architecto?</p>
+                <aside>
+                    <p>Artigo escrito por Gabriel Matos da Silva Freire</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Video</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
