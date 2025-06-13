@@ -12,16 +12,29 @@
             width: 400px;
             border-collapse: collapse;
             margin: 20px 0;
+            position: relative;
         }
         caption {
             font-weight: bold;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            color: darkblue;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: gray;
+            
         }
         thead, tfoot {
-            background-color: gray;
+            background-color: #353434;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px; /* Fixa o cabeçalho no topo da tabela */
+            background-color: #353434;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(223, 138, 138); /* Cor de fundo para linhas ímpares */
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray; /* Cor de fundo para linhas pares */
         }
         td, th {
             border: 1px solid black;
@@ -50,8 +63,8 @@
         <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>população</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">população</th>
             </tr>
         </thead>
         <tbody>
@@ -162,11 +175,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi assumenda maiores expedita? Dolores distinctio molestiae, earum hic excepturi at, voluptate obcaecati cupiditate sit officia veniam eos qui, deserunt sint beatae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam commodi sequi facilis explicabo neque perferendis est ratione odit nostrum officiis, nihil quo error vitae, laboriosam laborum, doloribus similique sed natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident cumque consequatur tempore voluptatibus hic corrupti, numquam assumenda eius possimus. Rem laboriosam quidem fugiat, culpa est beatae voluptatibus quis dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem quae totam temporibus odio dicta impedit tempora, eum sunt corrupti molestiae perferendis excepturi numquam ratione! Magnam nemo maxime corrupti aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi assumenda maiores expedita? Dolores distinctio molestiae, earum hic excepturi at, voluptate obcaecati cupiditate sit officia veniam eos qui, deserunt sint beatae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam commodi sequi facilis explicabo neque perferendis est ratione odit nostrum officiis, nihil quo error vitae, laboriosam laborum, doloribus similique sed natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident cumque consequatur tempore voluptatibus hic corrupti, numquam assumenda eius possimus. Rem laboriosam quidem fugiat, culpa est beatae voluptatibus quis dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem quae totam temporibus odio dicta impedit tempora, eum sunt corrupti molestiae perferendis excepturi numquam ratione! Magnam nemo maxime corrupti aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi assumenda maiores expedita? Dolores distinctio molestiae, earum hic excepturi at, voluptate obcaecati cupiditate sit officia veniam eos qui, deserunt sint beatae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam commodi sequi facilis explicabo neque perferendis est ratione odit nostrum officiis, nihil quo error vitae, laboriosam laborum, doloribus similique sed natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident cumque consequatur tempore voluptatibus hic corrupti, numquam assumenda eius possimus. Rem laboriosam quidem fugiat, culpa est beatae voluptatibus quis dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem quae totam temporibus odio dicta impedit tempora, eum sunt corrupti molestiae perferendis excepturi numquam ratione! Magnam nemo maxime corrupti aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi assumenda maiores expedita? Dolores distinctio molestiae, earum hic excepturi at, voluptate obcaecati cupiditate sit officia veniam eos qui, deserunt sint beatae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam commodi sequi facilis explicabo neque perferendis est ratione odit nostrum officiis, nihil quo error vitae, laboriosam laborum, doloribus similique sed natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident cumque consequatur tempore voluptatibus hic corrupti, numquam assumenda eius possimus. Rem laboriosam quidem fugiat, culpa est beatae voluptatibus quis dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem quae totam temporibus odio dicta impedit tempora, eum sunt corrupti molestiae perferendis excepturi numquam ratione! Magnam nemo maxime corrupti aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi assumenda maiores expedita? Dolores distinctio molestiae, earum hic excepturi at, voluptate obcaecati cupiditate sit officia veniam eos qui, deserunt sint beatae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam commodi sequi facilis explicabo neque perferendis est ratione odit nostrum officiis, nihil quo error vitae, laboriosam laborum, doloribus similique sed natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident cumque consequatur tempore voluptatibus hic corrupti, numquam assumenda eius possimus. Rem laboriosam quidem fugiat, culpa est beatae voluptatibus quis dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem quae totam temporibus odio dicta impedit tempora, eum sunt corrupti molestiae perferendis excepturi numquam ratione! Magnam nemo maxime corrupti aliquam.</p>
 </body>
 </html>
