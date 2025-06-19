@@ -10,5 +10,15 @@
 html{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
-    font-weight: 1.5em;
+    line-height: 1.5em;
+}
+menu{
+    display: none;
+}
+article{
+    width: 100%;
+}
+article::after{
+    content: "Este é um conteúdo impresso do site...";
+    
 }
